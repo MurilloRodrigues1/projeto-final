@@ -6,7 +6,8 @@ import {prisma} from '@/lib/prisma-client'
 
 
 export default async function CategoriasPage() {
-  // Busca todas as categorias do banco de dados
+
+  const categorias = await prisma.categorias.findMany()
 
   return (
     <div className="space-y-6">

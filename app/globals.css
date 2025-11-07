@@ -120,3 +120,12 @@
     @apply bg-background text-foreground;
   }
 }
+
+
+/* No contêiner que envolve o botão "murillo" e talvez outros itens da barra superior */
+.barra-superior-container {
+    display: flex;
+    justify-content: flex-end; /* Isso empurra todos os itens para a direita */
+    align-items: center;       /* Opcional: Alinha verticalmente no centro */
+    width: 100%;               /* Garante que o contêiner ocupe toda a largura */
+}
